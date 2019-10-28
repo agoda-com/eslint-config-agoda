@@ -23,9 +23,8 @@ You will also need to have all peer dependencies installed on your project. To
 do so, please run:
 
 ```sh
-npx install-peerdeps --dev eslint-config-airbnb
-
 # will use yarn/npm depending on detected configuration.
+npx install-peerdeps --dev eslint-config-agoda
 ```
 
 ## Usage
@@ -47,6 +46,44 @@ Example `.eslintrc` file for Typescript environment:
   "extends": ["agoda"],
   "rules": {}
 }
+```
+
+### Command line
+
+Setup following script in `package.json` to enable linting via CLI.
+
+```json
+    "lint": "eslint --ext .ts,.tsx --ignore-path .gitignore ./packages/",
+```
+
+Above example is using packages directory (like it would be done for a
+monorepo), so should be replaced by `./src/` in case of regular codebase
+
+### Visual Studio Code
+
+You can enable linting to run in background and check currently opened files by
+setting following configuration:
+
+workspace settings `.vscode/settings.json`
+
+```json
+"eslint.validate": [
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
+  ],
+  "eslint.options": {
+    "extensions": [".ts", ".tsx"]
+  },
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+
+  "eslint.alwaysShowStatus": true,
+  "eslint.autoFixOnSave": true
 ```
 
 ## Typescript
