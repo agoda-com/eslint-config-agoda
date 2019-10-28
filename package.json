@@ -56,7 +56,8 @@
   },
   "scripts": {
     "cz": "git-cz",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "test": "echo `No tests`"
   },
   "config": {
     "commitizen": {
