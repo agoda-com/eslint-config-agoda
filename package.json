@@ -1,0 +1,71 @@
+{
+  "name": "eslint-config-agoda",
+  "version": "0.0.0-development",
+  "description": "Agoda's ESLint configuration and rules",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agoda-com/eslint-config-agoda"
+  },
+  "bugs": {
+    "url": "https://github.com/agoda-com/eslint-config-agoda/issues"
+  },
+  "homepage": "https://github.com/agoda-com/eslint-config-agoda",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "agoda",
+    "javascript",
+    "typescript",
+    "styleguide",
+    "es2015",
+    "es2016",
+    "es2017",
+    "es2018",
+    "ts",
+    "react"
+  ],
+  "author": "Maciej Małkowski (https://github.com/matmalkowski)",
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.5.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^23.0.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "^18.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@typescript-eslint/eslint-plugin": "^2.5.0",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "eslint": "^6.6.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^23.0.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "husky": "^3.0.9",
+    "semantic-release": "^15.13.28",
+    "typescript": "^3.6.4"
+  },
+  "scripts": {
+    "cz": "git-cz",
+    "semantic-release": "semantic-release"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
