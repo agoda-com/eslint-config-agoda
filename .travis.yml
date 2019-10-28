@@ -10,6 +10,8 @@ before_install:
 before_script:
   - yarn install --frozen-lockfile
 
+script:
+
 deploy:
   provider: script
   script: yarn semantic-release
