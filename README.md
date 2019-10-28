@@ -1,3 +1,9 @@
+[![npm](https://img.shields.io/npm/v/eslint-config-agoda)](https://www.npmjs.com/package/eslint-config-agoda)
+![npm](https://img.shields.io/npm/dw/eslint-config-agoda)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![dependabot badge](https://badgen.net/dependabot/agoda-com/eslint-config-agoda/?icon=dependabot.svg)](https://dependabot.com/)
+
 # eslint-config-agoda
 
 This package contains Agoda's ESLint configuration that can be shared and
@@ -10,7 +16,6 @@ extended.
 yarn add -D eslint-config-agoda
 
 # npm users
-
 npm install --save-dev eslint-config-agoda
 ```
 
