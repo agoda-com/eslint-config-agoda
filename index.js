@@ -1,66 +1,50 @@
+const typescriptEslintRules = require("./configs/@typescript-eslint");
+const eslintRules = require("./configs/eslint");
+const importRules = require("./configs/import");
+const jsxA11yRules = require("./configs/jsx-a11y");
+const reactRules = require("./configs/react");
+
 module.exports = {
-  extends: [
-    "eslint:recommended",
-    'eslint-config-airbnb',
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended"
-  ],
-  plugins: [
-    "@typescript-eslint",
-    "jest"
-  ],
+  env: {
+    es6: true,
+    node: true,
+    browser: true
+  },
+  parserOptions: {
+    sourceType: "module",
+    ecmaFeatures: {
+      jsx: true,
+      generators: false,
+      objectLiteralDuplicateProperties: false
+    },
+    ecmaVersion: 2018
+  },
+  plugins: ["import", "react", "jsx-a11y", "jest", "@typescript-eslint"],
   rules: {
-    "indent": "off",
-    "@typescript-eslint/indent": [
-      "error",
-      4
-    ],
-    "@typescript-eslint/member-delimiter-style": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "react/jsx-filename-extension": [
-      "error",
-      {
-        "extensions": [
-          ".tsx"
-        ]
-      }
-    ],
-    "react/jsx-one-expression-per-line": "off",
-    "react/prop-types": "off",
-    "@typescript-eslint/prefer-interface": "off",
-    "linebreak-style": "off",
-    "max-len": [
-      "error",
-      {
-        "code": 120,
-        "tabWidth": 2,
-        "ignoreTemplateLiterals": true,
-        "ignoreStrings": true,
-        "ignoreComments": true
-      }
-    ],
-    "comma-dangle": [
-      "error",
-      "never"
-    ],
-    "implicit-arrow-linebreak": "off"
+    ...typescriptEslintRules,
+    ...eslintRules,
+    ...importRules,
+    ...jsxA11yRules,
+    ...reactRules
   },
   settings: {
     "import/resolver": {
-      "node": {
-        "extensions": [
-          ".ts",
-          ".tsx"
-        ]
+      node: {
+        extensions: [".ts", ".tsx"]
       }
-    }
+    },
+    react: {
+      pragma: "React",
+      version: "detect"
+    },
+    propWrapperFunctions: ["forbidExtraProps", "exact", "Object.freeze"],
+    "import/extensions": [".js", ".mjs", ".jsx", ".ts", ".tsx"],
+    "import/core-modules": [],
+    "import/ignore": ["node_modules", "\\.(coffee|scss|css|less|hbs|svg|json)$"]
   },
   overrides: [
     {
-      files: [
-        "**/*.test.ts",
-        "**/*.test.tsx"
-      ],
+      files: ["**/*.test.ts", "**/*.test.tsx"],
       env: {
         "jest/globals": true
       },
@@ -82,6 +66,5 @@ module.exports = {
         "react/static-property-placement": "off"
       }
     }
-
   ]
 };
