@@ -369,7 +369,7 @@ module.exports = {
       considerPropertyDescriptor: true
     }
   ],
-  "func-names": ["warn"],
+  "func-names": ["error"],
   "func-style": ["off", "expression"],
   "function-paren-newline": ["error", "consistent"],
   "id-blacklist": ["off"],
@@ -715,8 +715,8 @@ module.exports = {
   "no-await-in-loop": ["error"],
   "no-compare-neg-zero": ["error"],
   "no-cond-assign": ["error", "always"],
-  "no-console": ["warn"],
-  "no-constant-condition": ["warn"],
+  "no-console": ["error"],
+  "no-constant-condition": ["error"],
   "no-control-regex": ["error"],
   "no-debugger": ["error"],
   "no-dupe-args": ["error"],
@@ -796,7 +796,7 @@ module.exports = {
   ],
   "guard-for-in": ["error"],
   "max-classes-per-file": ["error", 1],
-  "no-alert": ["warn"],
+  "no-alert": ["error"],
   "no-caller": ["error"],
   "no-case-declarations": ["error"],
   "no-div-regex": ["off"],

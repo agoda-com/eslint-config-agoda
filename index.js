@@ -50,7 +50,7 @@ module.exports = {
       },
       rules: {
         "import/no-extraneous-dependencies": "off",
-        "jest/no-disabled-tests": "warn",
+        "jest/no-disabled-tests": "error",
         "jest/no-focused-tests": "error",
         "jest/no-alias-methods": "error",
         "jest/no-identical-title": "error",
@@ -59,7 +59,7 @@ module.exports = {
         "jest/no-test-prefixes": "error",
         "jest/no-test-callback": "error",
         "jest/no-test-return-statement": "error",
-        "jest/prefer-to-have-length": "warn",
+        "jest/prefer-to-have-length": "error",
         "jest/prefer-spy-on": "error",
         "jest/valid-expect": "error",
         "max-classes-per-file": "off",
