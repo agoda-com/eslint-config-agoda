@@ -127,7 +127,7 @@ module.exports = {
   ],
   "react/jsx-uses-react": ["error"],
   "react/jsx-uses-vars": ["error"],
-  "react/no-danger": ["warn"],
+  "react/no-danger": ["error"],
   "react/no-deprecated": ["error"],
   "react/no-did-mount-set-state": ["off"],
   "react/no-did-update-set-state": ["error"],
@@ -267,7 +267,7 @@ module.exports = {
     }
   ],
   "react/forbid-foreign-prop-types": [
-    "warn",
+    "off",
     {
       allowInPropTypes: true
     }
