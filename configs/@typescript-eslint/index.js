@@ -19,7 +19,7 @@ module.exports = {
   "@typescript-eslint/no-namespace": ["error"],
   "@typescript-eslint/no-non-null-assertion": ["warn"],
   "@typescript-eslint/no-this-alias": ["error"],
-  "@typescript-eslint/no-unused-vars": ["warn"],
+  "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "_" }],
   "@typescript-eslint/no-use-before-define": ["error"],
   "@typescript-eslint/no-var-requires": ["error"],
   "@typescript-eslint/prefer-namespace-keyword": ["error"],

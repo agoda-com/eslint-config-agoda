@@ -41,10 +41,7 @@ module.exports = {
   ],
   "react/jsx-boolean-value": [
     "error",
-    "never",
-    {
-      always: []
-    }
+    "always"
   ],
   "react/jsx-closing-bracket-location": ["error", "line-aligned"],
   "react/jsx-closing-tag-location": ["error"],
@@ -62,7 +59,7 @@ module.exports = {
       eventHandlerPropPrefix: "on"
     }
   ],
-  "react/jsx-indent-props": ["error", 2],
+  "react/jsx-indent-props": ["error", 4],
   "react/jsx-key": ["off"],
   "react/jsx-max-props-per-line": [
     "error",
@@ -213,7 +210,7 @@ module.exports = {
   ],
   "react/jsx-first-prop-new-line": ["error", "multiline-multiprop"],
   "react/jsx-equals-spacing": ["error", "never"],
-  "react/jsx-indent": ["error", 2],
+  "react/jsx-indent": ["error", 4],
   "react/jsx-no-target-blank": [
     "error",
     {
@@ -329,7 +326,7 @@ module.exports = {
     "error",
     {
       html: "enforce",
-      custom: "enforce",
+      custom: "ignore",
       exceptions: []
     }
   ],
