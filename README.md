@@ -83,7 +83,9 @@ workspace settings `.vscode/settings.json`
   "typescript.tsdk": "node_modules\\typescript\\lib",
 
   "eslint.alwaysShowStatus": true,
-  "eslint.autoFixOnSave": true
+  "eslint.autoFixOnSave": true,
+  "editor.formatOnSave": false,
+  "javascript.format.enable": false
 ```
 
 ## Typescript
