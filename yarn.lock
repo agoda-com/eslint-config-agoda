@@ -1768,9 +1768,9 @@ eslint-plugin-import@^2.18.2:
     resolve "^1.11.0"
 
 eslint-plugin-jest@^23.0.1:
-  version "23.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-23.0.1.tgz#79a93708733665495020063aabbe30224ce3144d"
-  integrity sha512-dcsf8z2gil+E5kqqdoIKqgLxUXNwC+V8uAij9y4c7byAbBuQE6hYfbFLKM0RYHPmc6oqmrpri6zrwpfWnMX3vg==
+  version "23.0.5"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-23.0.5.tgz#3c7c5e636c5a21677d2dfc8ba5424233ee2b9f27"
+  integrity sha512-etxXrWsFWzxsrxKwJnFC38uppH/vlJ3oF7Wmp/cxedqxRIxVhXup8e5y5MmtVXelevgxrgA1QS1vo8j889iK5Q==
   dependencies:
     "@typescript-eslint/experimental-utils" "^2.5.0"
 
