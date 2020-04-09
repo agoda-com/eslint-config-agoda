@@ -20,7 +20,7 @@ module.exports = {
     },
     ecmaVersion: 2018
   },
-  plugins: ["import", "react", "jsx-a11y", "jest", "@typescript-eslint"],
+  plugins: ["import", "react", "jsx-a11y", "jest", "@typescript-eslint", "react-hooks"],
   rules: {
     ...typescriptEslintRules,
     ...eslintRules,
