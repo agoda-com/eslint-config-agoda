@@ -3,6 +3,7 @@ const eslintRules = require("./configs/eslint");
 const importRules = require("./configs/import");
 const jsxA11yRules = require("./configs/jsx-a11y");
 const reactRules = require("./configs/react");
+const reactHooksRules = require("./configs/react-hooks");
 
 module.exports = {
   env: {
@@ -25,7 +26,8 @@ module.exports = {
     ...eslintRules,
     ...importRules,
     ...jsxA11yRules,
-    ...reactRules
+    ...reactRules,
+    ...reactHooksRules
   },
   settings: {
     "import/resolver": {
