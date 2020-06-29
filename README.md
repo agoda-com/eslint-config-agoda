@@ -91,4 +91,4 @@ workspace settings `.vscode/settings.json`
 ## Typescript
 
 Note that this config is created with typescript in mind, so remember to use
-`project` key to facilitate type-based rules as well!
+`project` key to facilitate type-based rules as well.
