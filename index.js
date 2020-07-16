@@ -32,7 +32,7 @@ module.exports = {
   settings: {
     "import/resolver": {
       node: {
-        extensions: [".ts", ".tsx"]
+        extensions: [".js", ".jsx", ".ts", ".tsx"]
       }
     },
     react: {
@@ -40,7 +40,7 @@ module.exports = {
       version: "detect"
     },
     propWrapperFunctions: ["forbidExtraProps", "exact", "Object.freeze"],
-    "import/extensions": [".js", ".mjs", ".jsx", ".ts", ".tsx"],
+    "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
     "import/core-modules": [],
     "import/ignore": ["node_modules", "\\.(coffee|scss|css|less|hbs|svg|json)$"]
   },
