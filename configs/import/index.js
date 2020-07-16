@@ -54,8 +54,9 @@ module.exports = {
     "ignorePackages",
     {
       js: "never",
-      mjs: "never",
-      jsx: "never"
+      jsx: "never",
+      ts: "never",
+      tsx: "never"
     }
   ],
   "import/order": [
