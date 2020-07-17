@@ -23,5 +23,6 @@ module.exports = {
   "@typescript-eslint/prefer-namespace-keyword": ["error"],
   "@typescript-eslint/triple-slash-reference": ["error"],
   "@typescript-eslint/type-annotation-spacing": ["error"],
-  "@typescript-eslint/no-useless-constructor": ["error"]
+  "@typescript-eslint/no-useless-constructor": ["error"],
+  "@typescript-eslint/prefer-literal-enum-member": ["error"],
 };
