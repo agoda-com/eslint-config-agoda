@@ -54,7 +54,7 @@
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.8",
     "husky": "^4.2.5",
-    "semantic-release": "^17.1.1",
+    "semantic-release": "^17.2.1",
     "typescript": "^3.9.7"
   },
   "scripts": {
