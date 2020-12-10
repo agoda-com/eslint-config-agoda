@@ -11,6 +11,7 @@ module.exports = {
     node: true,
     browser: true
   },
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     sourceType: "module",
     ecmaFeatures: {

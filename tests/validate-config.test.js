@@ -5,7 +5,7 @@ function getErrors() {
     const CLIEngine = eslint.CLIEngine;
 
     const cli = new CLIEngine({
-        configFile: 'index.js',
+        configFile: 'index.js'
     });
 
     return cli.executeOnText(fs.readFileSync('./tests/mock-file.js', 'utf8'));
