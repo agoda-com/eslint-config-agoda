@@ -54,13 +54,15 @@
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.8",
     "husky": "^4.3.5",
+    "jest": "^26.6.3",
+    "react": "^16.14.0",
     "semantic-release": "^17.1.1",
     "typescript": "^3.9.7"
   },
   "scripts": {
     "cz": "git-cz",
     "semantic-release": "semantic-release",
-    "test": "echo `No tests`"
+    "test": "node node_modules/jest/bin/jest.js"
   },
   "config": {
     "commitizen": {
