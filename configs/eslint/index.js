@@ -293,9 +293,9 @@ module.exports = {
     "toolbar",
     "top"
   ],
-  "no-shadow": ["error"],
+  "no-shadow": ["off"],
   "no-shadow-restricted-names": ["error"],
-  "no-undef": ["error"],
+  "no-undef": ["off"],
   "no-undef-init": ["error"],
   "no-undefined": ["off"],
   "array-bracket-newline": ["off", "consistent"],

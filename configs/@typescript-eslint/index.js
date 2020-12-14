@@ -6,7 +6,7 @@ module.exports = {
   "@typescript-eslint/adjacent-overload-signatures": ["error"],
   "@typescript-eslint/ban-ts-comment": ["error"],
   "@typescript-eslint/ban-types": ["error"],
-  "@typescript-eslint/naming-convention": ["error"],
+  "@typescript-eslint/naming-convention": "off",
   "@typescript-eslint/consistent-type-assertions": ["error"],
   "@typescript-eslint/no-array-constructor": ["error"],
   "@typescript-eslint/no-empty-function": ["error"],
@@ -25,4 +25,5 @@ module.exports = {
   "@typescript-eslint/type-annotation-spacing": ["error"],
   "@typescript-eslint/no-useless-constructor": ["error"],
   "@typescript-eslint/prefer-literal-enum-member": ["error"],
+  "@typescript-eslint/no-shadow": ["error"],
 };
