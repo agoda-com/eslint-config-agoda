@@ -9,4 +9,5 @@ jobs:
     steps:
       - uses: amannn/action-semantic-pull-request@v5
         env:
+          CI: true
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
