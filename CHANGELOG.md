@@ -1,3 +1,10 @@
+# [4.3.0](https://github.com/agoda-com/eslint-config-agoda/compare/v4.2.0...v4.3.0) (2023-03-02)
+
+
+### Features
+
+* remove semantic-release/npm ([bbbc904](https://github.com/agoda-com/eslint-config-agoda/commit/bbbc90441c2ee6becd23a71725440f0608bf16d6))
+
 # [4.2.0](https://github.com/agoda-com/eslint-config-agoda/compare/v4.1.0...v4.2.0) (2023-03-02)
 
 
