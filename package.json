@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-agoda",
-  "version": "4.2.0",
+  "version": "0.0.0-development",
   "description": "Agoda's ESLint configuration and rules",
   "main": "index.js",
   "license": "MIT",
@@ -76,6 +76,7 @@
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       "@semantic-release/changelog",
+      "@semantic-release/npm",
       "@semantic-release/git",
       "@semantic-release/github"
     ]
