@@ -1,3 +1,10 @@
+# [4.5.0](https://github.com/agoda-com/eslint-config-agoda/compare/v4.4.0...v4.5.0) (2023-04-12)
+
+
+### Features
+
+* test commit ([#410](https://github.com/agoda-com/eslint-config-agoda/issues/410)) ([a3cd37b](https://github.com/agoda-com/eslint-config-agoda/commit/a3cd37be7923cc026665f7af65d2222f55853005))
+
 # [4.4.0](https://github.com/agoda-com/eslint-config-agoda/compare/v4.3.0...v4.4.0) (2023-03-02)
 
 
