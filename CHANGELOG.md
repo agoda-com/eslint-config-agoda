@@ -1,3 +1,10 @@
+## [4.5.1](https://github.com/agoda-com/eslint-config-agoda/compare/v4.5.0...v4.5.1) (2023-04-12)
+
+
+### Bug Fixes
+
+* update token and publish ([#411](https://github.com/agoda-com/eslint-config-agoda/issues/411)) ([1592fd8](https://github.com/agoda-com/eslint-config-agoda/commit/1592fd8df0d75f90d3364614902d2729d82905c1))
+
 # [4.5.0](https://github.com/agoda-com/eslint-config-agoda/compare/v4.4.0...v4.5.0) (2023-04-12)
 
 
