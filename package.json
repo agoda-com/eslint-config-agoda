@@ -28,7 +28,7 @@
     "ts",
     "react"
   ],
-  "author": "Agoda.com",
+  "author": "agoda.com",
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.47.1",
     "@typescript-eslint/parser": "^5.47.1",
