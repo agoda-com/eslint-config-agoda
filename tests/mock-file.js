@@ -8,4 +8,3 @@ const result =  abc.firstName === 'John';
 Object.keys(abc);
 
 console.log(result);
-

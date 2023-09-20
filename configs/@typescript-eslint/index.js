@@ -5,11 +5,28 @@ module.exports = {
   "@typescript-eslint/prefer-interface": ["off"],
   "@typescript-eslint/adjacent-overload-signatures": ["error"],
   "@typescript-eslint/ban-ts-comment": ["error"],
-  "@typescript-eslint/ban-types": ["error"],
+  "@typescript-eslint/ban-types": ["error",
+    {
+      "types": {
+        "React.StatelessComponent": {
+          "message": "Please use React.FC instead.",
+          "fixWith": "React.FC",
+        },
+        "React.FunctionComponent": {
+          "message": "Please use React.FC instead.",
+          "fixWith": "React.FC",
+        },
+        "{}": false,
+        "object": false,
+        "Function": false,
+      },
+      "extendDefaults": true,
+    },
+  ],
   "@typescript-eslint/naming-convention": "off",
   "@typescript-eslint/consistent-type-assertions": ["error"],
   "@typescript-eslint/no-array-constructor": ["error"],
-  "@typescript-eslint/no-empty-function": ["error"],
+  "@typescript-eslint/no-empty-function": ['error', { 'allow': ['arrowFunctions'] }],
   "@typescript-eslint/no-empty-interface": ["error"],
   "@typescript-eslint/no-explicit-any": ["error"],
   "@typescript-eslint/no-inferrable-types": ["error"],
@@ -26,4 +43,5 @@ module.exports = {
   "@typescript-eslint/no-useless-constructor": ["error"],
   "@typescript-eslint/prefer-literal-enum-member": ["error"],
   "@typescript-eslint/no-shadow": ["error"],
+  "@typescript-eslint/semi": ["error"],
 };
