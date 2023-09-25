@@ -43,14 +43,14 @@ module.exports = {
   "max-len": [
     "error",
     {
-      code: 120,
+      code: 200,
       tabWidth: 2,
       ignoreTemplateLiterals: true,
       ignoreStrings: true,
       ignoreComments: true
     }
   ],
-  "comma-dangle": ["error", "never"],
+  "comma-dangle": ["error", "always-multiline"], // not having a trailing comma results in unnecessary git changes
   "implicit-arrow-linebreak": ["off", "beside"],
   camelcase: [
     "off",
@@ -193,22 +193,7 @@ module.exports = {
       allowUnboundThis: true
     }
   ],
-  "prefer-destructuring": [
-    "error",
-    {
-      VariableDeclarator: {
-        array: false,
-        object: true
-      },
-      AssignmentExpression: {
-        array: true,
-        object: false
-      }
-    },
-    {
-      enforceForRenamedProperties: false
-    }
-  ],
+  "prefer-destructuring": ["off"], // adds unnecessary lines and removes context from code
   "prefer-numeric-literals": ["error"],
   "prefer-reflect": ["off"],
   "prefer-template": ["error"],

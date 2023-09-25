@@ -6,7 +6,7 @@ module.exports = {
       caseSensitive: true
     }
   ],
-  "import/named": ["error"],
+  "import/named": ["off"], // not required for TS
   "import/default": ["off"],
   "import/namespace": ["off"],
   "import/export": ["error"],
@@ -66,7 +66,7 @@ module.exports = {
     }
   ],
   "import/newline-after-import": ["error"],
-  "import/prefer-default-export": ["error"],
+  "import/prefer-default-export": ["off"], // // adds unnecessary code change requirements when updating a 1 export module to multiple export and vice versa
   "import/no-restricted-paths": ["off"],
   "import/max-dependencies": [
     "off",
