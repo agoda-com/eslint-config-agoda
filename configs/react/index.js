@@ -260,12 +260,7 @@ module.exports = {
   ],
   "react/jsx-space-before-closing": ["off", "always"],
   "react/no-array-index-key": ["error"],
-  "react/require-default-props": [
-    "error",
-    {
-      forbidDefaultForRequired: true
-    }
-  ],
+  "react/require-default-props": ["off"], // not relevant to modern React with TS functional components
   "react/forbid-foreign-prop-types": [
     "off",
     {
@@ -297,7 +292,7 @@ module.exports = {
       children: "never"
     }
   ],
-  "react/destructuring-assignment": ["error", "always"],
+  "react/destructuring-assignment": ["off"], // adds unnecessary lines and removes context from code
   "react/no-access-state-in-setstate": ["error"],
   "react/button-has-type": [
     "error",
