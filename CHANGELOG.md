@@ -1,3 +1,10 @@
+# [4.6.0](https://github.com/agoda-com/eslint-config-agoda/compare/v4.5.1...v4.6.0) (2024-11-07)
+
+
+### Features
+
+* Update rules according to PR 427 ([#436](https://github.com/agoda-com/eslint-config-agoda/issues/436)) ([2f7ddbb](https://github.com/agoda-com/eslint-config-agoda/commit/2f7ddbb44f4af29531f2554732f55baec4d4ac8a))
+
 ## [4.5.1](https://github.com/agoda-com/eslint-config-agoda/compare/v4.5.0...v4.5.1) (2023-04-12)
 
 
