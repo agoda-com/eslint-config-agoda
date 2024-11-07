@@ -23,7 +23,14 @@ module.exports = {
       "extendDefaults": true,
     },
   ],
-  "@typescript-eslint/naming-convention": "off",
+  "@typescript-eslint/naming-convention": [
+    "error", 
+    { 
+      "selector": "variable", 
+      "format": ["camelCase", "PascalCase", "UPPER_CASE"], 
+      "leadingUnderscore": "allow" 
+    }
+  ],
   "@typescript-eslint/consistent-type-assertions": ["error"],
   "@typescript-eslint/no-array-constructor": ["error"],
   "@typescript-eslint/no-empty-function": ['error', { 'allow': ['arrowFunctions'] }],
