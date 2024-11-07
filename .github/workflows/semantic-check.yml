@@ -8,6 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: amannn/action-semantic-pull-request@v5
-        env:
-          CI: true
+        with:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
