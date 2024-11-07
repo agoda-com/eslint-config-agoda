@@ -14,8 +14,8 @@ describe('Validate configs by eslint', () => {
         const results = await getErrors();
         const errorMessages = results[0].messages;
         expect(errorMessages).toHaveLength(3);
-        expect(errorMessages[0].ruleId).toBe('no-multi-spaces');
-        expect(errorMessages[1].ruleId).toBe('no-console');
-        expect(errorMessages[2].ruleId).toBe('no-multiple-empty-lines');
+        expect(errorMessages[0].ruleId).toBe('comma-dangle');
+        expect(errorMessages[1].ruleId).toBe('no-multi-spaces');
+        expect(errorMessages[2].ruleId).toBe('no-console');
     });
 });
