@@ -17,6 +17,9 @@ yarn add -D eslint-config-agoda
 
 # npm users
 npm install --save-dev eslint-config-agoda
+
+# pnpm users
+pnpm add -D eslint-config-agoda
 ```
 
 You will also need to have all peer dependencies installed on your project. To
