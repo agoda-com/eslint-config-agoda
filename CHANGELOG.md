@@ -1,3 +1,10 @@
+## [4.6.1](https://github.com/agoda-com/eslint-config-agoda/compare/v4.6.0...v4.6.1) (2024-11-07)
+
+
+### Bug Fixes
+
+* Add install command for pnpm, Dummy PR for triggering new version ([#439](https://github.com/agoda-com/eslint-config-agoda/issues/439)) ([4233dca](https://github.com/agoda-com/eslint-config-agoda/commit/4233dca5c2b555f9b648730c8a391bc5013258ac))
+
 # [4.6.0](https://github.com/agoda-com/eslint-config-agoda/compare/v4.5.1...v4.6.0) (2024-11-07)
 
 
