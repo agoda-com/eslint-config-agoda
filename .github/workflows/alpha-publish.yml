@@ -1,4 +1,4 @@
-name: Publish alpha to NPM registry
+name: Publish from branch to NPM registry
 
 on:
   workflow_dispatch:
