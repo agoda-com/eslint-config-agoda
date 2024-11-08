@@ -1,3 +1,15 @@
+# [5.0.0-beta.1](https://github.com/agoda-com/eslint-config-agoda/compare/v4.6.1...v5.0.0-beta.1) (2024-11-08)
+
+
+### Features
+
+* Remove eslint-config-airbnb ([d47f10b](https://github.com/agoda-com/eslint-config-agoda/commit/d47f10b717af3f94e7a05ea5d37d57bf00fadd31))
+
+
+### BREAKING CHANGES
+
+* All configs from eslint-config-airbnb will be lost
+
 ## [4.6.1](https://github.com/agoda-com/eslint-config-agoda/compare/v4.6.0...v4.6.1) (2024-11-07)
 
 
