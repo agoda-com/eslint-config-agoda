@@ -76,7 +76,13 @@
         "channel": "next"
       },
       {
-        "name": "*",
+        "name": "beta",
+        "channel": "beta",
+        "prerelease": "beta"
+      },
+      {
+        "name": "develop/*",
+        "channel": "alpha",
         "prerelease": "alpha"
       }
     ],
