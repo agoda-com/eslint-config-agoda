@@ -1,3 +1,5 @@
+# [5.0.0](https://github.com/agoda-com/eslint-config-agoda/compare/v4.6.1...v5.0.0) (2024-11-08)
+
 ## [4.6.1](https://github.com/agoda-com/eslint-config-agoda/compare/v4.6.0...v4.6.1) (2024-11-07)
 
 
