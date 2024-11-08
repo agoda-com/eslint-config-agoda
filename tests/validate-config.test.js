@@ -1,4 +1,3 @@
-const fs = require('fs');
 const { ESLint } = require('eslint');
 
 async function getErrors() {
