@@ -1,4 +1,4 @@
-name: Publish prerelease to NPM registry
+name: Publish alpha to NPM registry
 
 on:
   workflow_dispatch:
