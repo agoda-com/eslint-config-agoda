@@ -26,4 +26,4 @@ jobs:
       with:
         node-version: 18
     - run: yarn install --frozen-lockfile
-    - run: yarn semantic-release --branches ${{ github.event.inputs.branch }}
+    - run: yarn semantic-release
