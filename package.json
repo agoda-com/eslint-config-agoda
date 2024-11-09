@@ -81,7 +81,7 @@
         "prerelease": "beta"
       },
       {
-        "name": "develop/*",
+        "name": "*",
         "channel": "alpha",
         "prerelease": "alpha"
       }
