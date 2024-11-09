@@ -17,5 +17,5 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 20
-    - run: yarn install --frozen-lockfile
-    - run: yarn semantic-release
+    - run: pnpm install --frozen-lockfile
+    - run: pnpm semantic-release
