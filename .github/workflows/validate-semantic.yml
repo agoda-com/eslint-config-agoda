@@ -1,0 +1,24 @@
+name: Validate semantic release
+
+on: [pull_request]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.x, 22.x]
+    env:
+        CI: true
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: yarn install --frozen-lockfile
+    - run: |
+        GITHUB_REF=${{ github.head_ref }}
+        yarn semantic-release --no-ci --dry-run --branches ${{ github.head_ref }}
