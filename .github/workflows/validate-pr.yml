@@ -18,4 +18,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: yarn install --frozen-lockfile
     - run: yarn test
-    - run: yarn semantic-release --no-ci --dry-run --branches ${{ github.head_ref }}
+    - run: |
+        GITHUB_REF=${{ github.head_ref }}
+        yarn semantic-release --no-ci --dry-run --branches ${{ github.head_ref }}
