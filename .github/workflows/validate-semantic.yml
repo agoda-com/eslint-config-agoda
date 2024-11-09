@@ -18,7 +18,8 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-    - run: yarn install --frozen-lockfile
+    - run: corepack enable pnpm
+    - run: pnpm install --frozen-lockfile
     - run: |
         GITHUB_REF=${{ github.head_ref }}
-        yarn semantic-release --no-ci --dry-run --branches ${{ github.head_ref }}
+        pnpm semantic-release --no-ci --dry-run --branches ${{ github.head_ref }}

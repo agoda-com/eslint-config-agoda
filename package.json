@@ -114,5 +114,6 @@
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
-  }
+  },
+  "packageManager": "pnpm@9.12.3"
 }
