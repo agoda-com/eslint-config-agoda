@@ -19,5 +19,6 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 20
+    - run: corepack enable pnpm
     - run: pnpm install --frozen-lockfile
     - run: pnpm semantic-release
