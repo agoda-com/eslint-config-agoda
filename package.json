@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-agoda",
-  "version": "4.6.1",
+  "version": "5.0.0-beta.1",
   "description": "Agoda's ESLint configuration and rules",
   "main": "index.js",
   "license": "MIT",
@@ -38,9 +38,6 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^4.6.2"
-  },
-  "dependencies": {
-    "eslint-config-airbnb": "^19.0.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.0.0",
