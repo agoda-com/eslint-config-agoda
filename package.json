@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-agoda",
-  "version": "5.0.0-beta.1",
+  "version": "5.0.0-beta.2",
   "description": "Agoda's ESLint configuration and rules",
   "main": "index.js",
   "license": "MIT",

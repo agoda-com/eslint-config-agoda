@@ -1,3 +1,10 @@
+# [5.0.0-beta.2](https://github.com/agoda-com/eslint-config-agoda/compare/v5.0.0-beta.1...v5.0.0-beta.2) (2024-11-11)
+
+
+### Features
+
+* Trigger previous changes as feat ([2e05f9b](https://github.com/agoda-com/eslint-config-agoda/commit/2e05f9b489f94a45e7df16dbf4915c5af844453a))
+
 # [5.0.0-beta.1](https://github.com/agoda-com/eslint-config-agoda/compare/v4.6.1...v5.0.0-beta.1) (2024-11-08)
 
 
