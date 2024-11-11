@@ -1,5 +1,5 @@
 module.exports = {
-  "@typescript-eslint/indent": ["error", 4],
+  "@typescript-eslint/indent": ["off"],
   "@typescript-eslint/member-delimiter-style": ["off"],
   "@typescript-eslint/explicit-function-return-type": ["off"],
   "@typescript-eslint/prefer-interface": ["off"],
@@ -46,9 +46,9 @@ module.exports = {
   "@typescript-eslint/no-var-requires": ["error"],
   "@typescript-eslint/prefer-namespace-keyword": ["error"],
   "@typescript-eslint/triple-slash-reference": ["error"],
-  "@typescript-eslint/type-annotation-spacing": ["error"],
+  "@typescript-eslint/type-annotation-spacing": ["off"],
   "@typescript-eslint/no-useless-constructor": ["error"],
   "@typescript-eslint/prefer-literal-enum-member": ["error"],
   "@typescript-eslint/no-shadow": ["error"],
-  "@typescript-eslint/semi": ["error"],
+  "@typescript-eslint/semi": ["off"],
 };
