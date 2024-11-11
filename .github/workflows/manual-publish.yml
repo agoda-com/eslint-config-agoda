@@ -1,4 +1,4 @@
-name: Manual Publish to NPM registry
+name: Publish to NPM registry (Prerelease)
 
 on:
   workflow_dispatch:
@@ -11,6 +11,7 @@ jobs:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        BUILD_NUMBER: ${{ github.ref_name }}.${{ github.run_number }}.${{ github.run_attempt }}
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js 20.x
@@ -19,4 +20,9 @@ jobs:
         node-version: 20
     - run: corepack enable pnpm
     - run: pnpm install --frozen-lockfile
-    - run: pnpm semantic-release
+    - run: |
+        PACKAGE_VERSION=$(node -pe "require('./package.json').version")
+        PACKAGE_VERSION="${PACKAGE_VERSION}-${BUILD_NUMBER}"
+        ./ci/modify-package-version.sh $PACKAGE_VERSION
+    - run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+    - run: pnpm publish --tag alpha --no-git-checks
