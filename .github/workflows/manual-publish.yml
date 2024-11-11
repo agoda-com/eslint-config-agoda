@@ -11,7 +11,7 @@ jobs:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        BUILD_NUMBER: ${{ github.ref }}.${{ github.run_number }}.${{ github.run_attempt }}
+        BUILD_NUMBER: ${{ github.ref_name }}.${{ github.run_number }}.${{ github.run_attempt }}
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js 20.x
