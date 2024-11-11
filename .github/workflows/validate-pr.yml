@@ -16,5 +16,6 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-    - run: yarn install --frozen-lockfile
-    - run: yarn test
+    - run: corepack enable pnpm
+    - run: pnpm install --frozen-lockfile
+    - run: pnpm test
