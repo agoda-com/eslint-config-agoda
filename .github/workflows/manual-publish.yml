@@ -24,4 +24,5 @@ jobs:
         PACKAGE_VERSION=$(node -pe "require('./package.json').version")
         PACKAGE_VERSION="${PACKAGE_VERSION}-${BUILD_NUMBER}"
         ./ci/modify-package-version.sh $PACKAGE_VERSION
+    - run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
     - run: pnpm publish --tag alpha --no-git-checks
