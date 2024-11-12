@@ -79,11 +79,6 @@
         "name": "beta",
         "channel": "beta",
         "prerelease": "beta"
-      },
-      {
-        "name": "*",
-        "channel": "alpha",
-        "prerelease": "alpha"
       }
     ],
     "plugins": [
