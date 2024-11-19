@@ -1,34 +1,25 @@
 module.exports = {
-  "@typescript-eslint/indent": ["error", 4],
+  // "@typescript-eslint/indent": ["error", 4],
   "@typescript-eslint/member-delimiter-style": ["off"],
   "@typescript-eslint/explicit-function-return-type": ["off"],
   "@typescript-eslint/prefer-interface": ["off"],
   "@typescript-eslint/adjacent-overload-signatures": ["error"],
   "@typescript-eslint/ban-ts-comment": ["error"],
-  "@typescript-eslint/ban-types": ["error",
-    {
-      "types": {
-        "React.StatelessComponent": {
-          "message": "Please use React.FC instead.",
-          "fixWith": "React.FC",
-        },
-        "React.FunctionComponent": {
-          "message": "Please use React.FC instead.",
-          "fixWith": "React.FC",
-        },
-        "{}": false,
-        "object": false,
-        "Function": false,
-      },
-      "extendDefaults": true,
-    },
+  "@typescript-eslint/no-restricted-types": [
+      "error",
+      {
+          types: {
+              "React.StatelessComponent": { message: "Please use React.FC instead.", fixWith: "React.FC" },
+              "React.FunctionComponent": { message: "Please use React.FC instead.", fixWith: "React.FC" },
+          },
+      }
   ],
   "@typescript-eslint/naming-convention": [
-    "error", 
-    { 
-      "selector": "variable", 
-      "format": ["camelCase", "PascalCase", "UPPER_CASE"], 
-      "leadingUnderscore": "allow" 
+    "error",
+    {
+      "selector": "variable",
+      "format": ["camelCase", "PascalCase", "UPPER_CASE"],
+      "leadingUnderscore": "allow"
     }
   ],
   "@typescript-eslint/consistent-type-assertions": ["error"],
@@ -46,9 +37,9 @@ module.exports = {
   "@typescript-eslint/no-var-requires": ["error"],
   "@typescript-eslint/prefer-namespace-keyword": ["error"],
   "@typescript-eslint/triple-slash-reference": ["error"],
-  "@typescript-eslint/type-annotation-spacing": ["error"],
+  // "@typescript-eslint/type-annotation-spacing": ["error"],
   "@typescript-eslint/no-useless-constructor": ["error"],
   "@typescript-eslint/prefer-literal-enum-member": ["error"],
   "@typescript-eslint/no-shadow": ["error"],
-  "@typescript-eslint/semi": ["error"],
+  // "@typescript-eslint/semi": ["error"],
 };
