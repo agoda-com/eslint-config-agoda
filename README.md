@@ -53,7 +53,7 @@ Example `.eslintrc` file for Typescript environment:
 
 ### Command line
 
-Setup following script in `package.json` to enable linting via CLI.
+Add the following script to `package.json` to enable linting via CLI.
 
 ```json
     "lint": "eslint --ext .ts,.tsx --ignore-path .gitignore ./packages/",
